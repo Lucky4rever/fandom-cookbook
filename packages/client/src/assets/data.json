@@ -1,0 +1,18 @@
+[
+  {
+    "fandom": "zelda",
+    "id": "1",
+    "background": "aqua",
+    "title": "The legend of Zelda",
+    "description": "zelda cool text",
+    "img": "https://content1.rozetka.com.ua/goods/images/big/364865316.jpg"
+  },
+  {
+    "fandom": "witcher",
+    "id": "2",
+    "background": "red",
+    "title": "The Witcher 3",
+    "description": "witcher cool text",
+    "img": "https://image.api.playstation.com/vulcan/ap/rnd/202211/0914/TvcIHkYqqln1RGbaFqBeuFp6.jpg"
+  }
+]

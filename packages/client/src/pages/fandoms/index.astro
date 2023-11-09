@@ -1,0 +1,24 @@
+---
+import PageWithHeader from "@layouts/PageWithHeader.astro";
+import data from "@/assets/data.json";
+import { Tile } from "@reactive/Tile";
+import type { TileProps } from "@/utils/types/tile.type";
+
+const tiles = data as unknown as TileProps[];
+---
+
+<PageWithHeader title="Fandoms">
+  <div>
+    {tiles.map((item) => <Tile {...item} />)}
+  </div>
+</PageWithHeader>
+
+<style>
+  main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+</style>

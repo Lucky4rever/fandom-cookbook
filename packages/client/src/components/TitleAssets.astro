@@ -1,0 +1,26 @@
+---
+import TitleAsset from "@components/TitleAsset.astro";
+
+import zelda from "@assets/img/zelda-asset.png";
+import horizon from "@assets/img/horizon-asset.png";
+import cyberpunk from "@assets/img/cyberpunk-asset.png";
+---
+
+<aside>
+  <TitleAsset href={horizon.src} bottom={45} />
+  <TitleAsset href={zelda.src} bottom={25} left={-10} />
+  <TitleAsset href={cyberpunk.src} left={18} />
+</aside>
+
+<style>
+  aside {
+    position: relative;
+    overflow-y: hidden;
+  }
+
+  @media (width <= 650px) {
+    aside {
+      display: none;
+    }
+  }
+</style>

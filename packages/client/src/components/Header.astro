@@ -1,0 +1,41 @@
+---
+import HeaderLink from "@components/HeaderLink.astro";
+import HeaderLogo from "@components/HeaderLogo.astro";
+import ROUTES from "@utils/consts/routes.const";
+---
+
+<header>
+  <nav>
+    <HeaderLogo />
+    <ul>
+      <HeaderLink href={ROUTES.HOME}>Home</HeaderLink>
+      <HeaderLink href={ROUTES.FANDOMS}>Fandoms</HeaderLink>
+    </ul>
+  </nav>
+</header>
+
+<style>
+  header {
+    position: fixed;
+    width: 100%;
+    height: var(--header-size);
+    background-color: var(--secondary);
+    z-index: 100;
+  }
+
+  nav {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+
+    height: 100%;
+    padding-inline: 1rem;
+    margin: 0rem;
+  }
+</style>
