@@ -1,0 +1,48 @@
+---
+import Header from "@components/Header.astro";
+import Layout from "./Layout.astro";
+
+interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<Layout title={title}>
+  <Header />
+  <main id="swup" class="wrapper">
+    <slot />
+  </main>
+  <script type="module" src="/src/assets/page-loader.js"></script>
+</Layout>
+
+<style>
+  main {
+    position: relative;
+    width: 100%;
+    height: calc(100% - var(--header-size) - 1px);
+    padding-top: var(--header-size);
+  }
+</style>
+
+<style is:global>
+  @font-face {
+    font-family: "Kenia";
+    src: url(../assets/fonts/Kenia/Kenia-Regular.ttf) format("truetype");
+  }
+
+  @font-face {
+    font-family: "Carter One";
+    src: url(../assets/fonts/Carter_One/CarterOne-Regular.ttf)
+      format("truetype");
+  }
+
+  :root {
+    --header-size: 3.5rem;
+  }
+
+  html {
+    font-family: "Carter One";
+  }
+</style>

@@ -1,0 +1,59 @@
+---
+import ROUTES from '@utils/consts/routes.const';
+import rightArrow from '@assets/icons/right-arrow.svg';
+---
+
+<a href={ROUTES.FANDOMS}>
+  <div>
+    <slot />
+    <img src={rightArrow.src} alt="" />
+  </div>
+</a>
+
+<style>
+  a {
+    width: 15rem;
+    height: fit-content;
+    color: inherit;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    transition: width 0.5s ease-in-out;
+
+
+    &:hover {
+      width: 100%;
+      cursor: pointer;
+    }
+  }
+
+  div {
+    width: 100%;
+    height: fit-content;
+    padding: 0.5rem;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: var(--secondary);
+    color: #fff;
+    border-radius: 1.5rem;
+
+    transition: width 0.5s ease-in-out;
+  }
+
+  img {
+    height: 3rem;
+    aspect-ratio: 1/1;
+  }
+
+  @media (width <= 916px) {
+    img {
+      height: 2rem;
+    }
+  }
+</style>

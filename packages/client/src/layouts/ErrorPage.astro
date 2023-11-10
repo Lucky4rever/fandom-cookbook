@@ -1,0 +1,13 @@
+---
+import PageWithHeader from '@layouts/PageWithHeader.astro';
+interface Props {
+  code: string | number;
+}
+
+const { code } = Astro.props;
+---
+
+<PageWithHeader title={`Error ${code}`}>
+  <h1>{code}</h1>
+  <slot />
+</PageWithHeader>

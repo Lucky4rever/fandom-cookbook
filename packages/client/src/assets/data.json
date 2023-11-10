@@ -1,0 +1,50 @@
+[
+  {
+    "id": "1",
+    "fandom": "zelda-tok",
+    "title": "The legend of Zelda: Tears of Kingdom",
+    "description": "zelda cool text",
+    "bg-color": "aqua",
+    "front-color": "black",
+    "text-color": "white",
+    "logo": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/0f20620d-7bd4-4f88-b050-b3f080de7bf1/dfdneq0-1c662af3-5dee-4320-a8bb-129240db65bd.png/v1/fit/w_828,h_666/logo_of_the_legend_of_zelda__tears_of_the_kingdom_by_nintendokater_dfdneq0-414w-2x.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTU0NSIsInBhdGgiOiJcL2ZcLzBmMjA2MjBkLTdiZDQtNGY4OC1iMDUwLWIzZjA4MGRlN2JmMVwvZGZkbmVxMC0xYzY2MmFmMy01ZGVlLTQzMjAtYThiYi0xMjkyNDBkYjY1YmQucG5nIiwid2lkdGgiOiI8PTE5MjAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.uo4fsluwatEhDnQnpA3ndgJoiU1X5Ip_zI9sdRalHwc",
+    "front-image": "https://www.zeldadungeon.net/wiki/images/thumb/4/46/Zelda_-_TotK_key_art.png/400px-Zelda_-_TotK_key_art.png",
+    "bg-image": "https://www.cnet.com/a/img/resize/975719fbb4242f346c0db05e044608b2dcf7cddc/hub/2022/09/13/fc6f151c-93b1-471c-97ea-a76c44e30235/switch-tloz-totk-artwork-01.jpg?auto=webp&fit=crop&height=675&width=1200"
+  },
+  {
+    "id": "2",
+    "fandom": "star-wars",
+    "title": "Star Wars",
+    "description": "STAR WARS YODA TEXT",
+    "bg-color": "black",
+    "front-color": "aquamarine",
+    "text-color": "green",
+    "logo": "https://assets.codepen.io/308367/yoda-logo.webp",
+    "front-image": "https://assets.codepen.io/308367/yoda-front.png",
+    "bg-image": "https://assets.codepen.io/308367/yoda-on-dagobah.jpg"
+  },
+  {
+    "id": "3",
+    "fandom": "witcher-3",
+    "title": "The Witcher 3: Wild Hunt",
+    "description": "To be fair, i hate Witcher 3",
+    "bg-color": "red",
+    "front-color": "white",
+    "text-color": "black",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/EN_The-Witcher-3_Logo-Black_RGB.svg/783px-EN_The-Witcher-3_Logo-Black_RGB.svg.png",
+    "front-image": "https://cdn.discordapp.com/attachments/798288758830530573/1172483804552757280/pngegg_1.png?ex=65607ba2&is=654e06a2&hm=3aeb68ab8107752fb2cfc1697da4386759f3716b6b0ba3d9af973c548e8b5fd5&",
+    "bg-image": "https://img.redbull.com/images/c_fill,w_1200,h_630,g_auto,f_auto,q_auto/redbullcom/2015/07/02/1331732942905_2/the-witcher-3-wild-hunt"
+  },
+  {
+    "id": "4",
+    "fandom": "cyberpunk",
+    "title": "Cyberpunk",
+    "description": "Yooo, this is cyberpunk food",
+    "bg-color": "darkblue",
+    "front-color": "yellow",
+    "text-color": "black",
+    "logo": "https://purepng.com/public/uploads/large/purepng.com-cyberpunk-2077-logologosgame-logogame-logosgameslogocyberpunk-2077-12715289961328hlgr.png",
+    "front-image": "https://cdn.discordapp.com/attachments/798288758830530573/1172488337056084058/png-image.png?ex=65607fdb&is=654e0adb&hm=9cb1f0d315c9b166cf5c064ab1ebc4415de39a287fccd0fe85ab9a4e4a018a2e&",
+    "bg-image": "https://www.hollywoodreporter.com/wp-content/uploads/2023/10/Cyberpunk2077_A_mercenary_on_the_rise_RGB.png?w=1296"
+  }
+]

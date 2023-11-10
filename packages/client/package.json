@@ -4,7 +4,7 @@
   "version": "0.0.1",
   "scripts": {
     "dev": "astro dev",
-    "start": "astro dev",
+    "start": "astro dev --open",
     "build": "astro check && astro build",
     "preview": "astro preview",
     "astro": "astro"
@@ -15,8 +15,16 @@
     "@types/react": "^18.0.21",
     "@types/react-dom": "^18.0.6",
     "astro": "^3.4.3",
+    "framer-motion": "^10.16.4",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
+    "styled-components": "^6.1.0",
     "typescript": "^5.2.2"
+  },
+  "devDependencies": {
+    "@swup/a11y-plugin": "^4.4.2",
+    "@swup/head-plugin": "^2.1.2",
+    "@swup/slide-theme": "^2.0.0",
+    "swup": "^4.4.2"
   }
 }
