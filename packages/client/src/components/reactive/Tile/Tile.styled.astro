@@ -73,7 +73,7 @@
 
   .logo {
     z-index: 1000;
-    filter: invert(1);
+    /* filter: invert(1); */
     width: 65%;
     margin-inline: auto;
     inset: auto 0 2rem;
@@ -84,6 +84,7 @@
   .tile:hover .logo {
     transform: translateY(-2rem) translateZ(20px);
     rotate: x calc(var(--rotation) * -1);
+    filter: invert(1);
   }
 
   .front-image {

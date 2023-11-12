@@ -1,0 +1,43 @@
+<slot />
+
+<style is:global>
+  div.wrapper {
+    display: grid;
+    grid-template-columns: [large-start] 5% [big-start] 10% [normal-start] 70% [normal-end] 10% [big-end] 5% [large-end];
+    height: max-content;
+    width: 100%;
+  }
+
+  div.wrapper > * {
+    grid-column: normal;
+  }
+
+  section.front.front {
+    position: relative;
+    grid-column: large;
+    height: calc(100svh - var(--header-size));
+    width: 100%;
+  }
+
+  img.logo {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    translate: -50% -50%;
+
+    height: 40%;
+    width: 100%;
+
+    object-fit: contain;
+  }
+
+  img, picture {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  p, h1 {
+    grid-column: normal;
+  }
+</style>

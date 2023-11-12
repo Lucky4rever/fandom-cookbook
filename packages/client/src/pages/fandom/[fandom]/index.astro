@@ -1,0 +1,29 @@
+---
+import type { Fandom as FandomProps } from '@utils/types/fandom.type';
+import data from '@assets/data.json';
+import PageWithHeader from '@layouts/PageWithHeader.astro';
+import { Fandom, FandomStyle } from '@components/reactive/Fandom';
+
+interface Props extends FandomProps {};
+
+export async function getStaticPaths() {
+  const paths = data.map(item => {
+    return {
+      params: {
+        fandom: item.fandom,
+      },
+      props: { ...item } as unknown as Props,
+    }
+  });
+
+  return paths;
+}
+
+const props = Astro.props;
+---
+
+<PageWithHeader title={props.title}>
+  <FandomStyle>
+    <Fandom {...props} client:only="react" />
+  </FandomStyle>
+</ErrorPage>

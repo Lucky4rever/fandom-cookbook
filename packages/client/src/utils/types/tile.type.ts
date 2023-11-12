@@ -1,17 +1,6 @@
-type TileProps = 
-// {
-//   id: number;
-//   title: string;
-//   description: string;
-//   img: string;
-
-//   classList?: string | string[];
-// } | 
-{
+export type TileProps = {
   fandom: string;
   logo: string;
-  "front-image": string;
-  "bg-image": string;
+  frontImage: string;
+  bgImage: string;
 };
-
-export { type TileProps };
