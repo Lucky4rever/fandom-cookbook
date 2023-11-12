@@ -1,4 +1,5 @@
 import { defineConfig } from 'astro/config';
+import node from '@astrojs/node';
 
 import react from "@astrojs/react";
 
@@ -6,6 +7,9 @@ import react from "@astrojs/react";
 export default defineConfig({
   root: './',
   output: 'hybrid',
+  adapter: node({
+    mode: 'standalone',
+  }),
   server: {
     port: 3000,
     host: '::1'
