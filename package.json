@@ -4,6 +4,7 @@
   "description": "",
   "scripts": {
     "configure:hooks": "pnpm i && chmod +x hooks/setup-hooks && pnpm hooks/setup-hooks",
+    "start": "pnpm start:client ; pnpm start:server",
     "start:client": "pnpm run --prefix packages/client start",
     "start:server": "pnpm run --prefix packages/server start"
   },

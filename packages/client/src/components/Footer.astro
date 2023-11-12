@@ -1,0 +1,44 @@
+<footer>
+  <h3>Team project for KPI for the discipline "Fundamentals of front-end development". The project was created by:</h3>
+  <div>
+    <h3>Members:</h3>
+    <p>Snigur Pavlo</p>
+    <p>Kateryna Melnykova</p>
+  </div>
+  <div>
+    <h3>Telegram:</h3>
+    <p><a href="https://t.me/Lackych">@Lackych</a></p>
+    <p><a href="https://t.me/gooddemiurge">@gooddemiurge</a></p>
+  </div>
+  <div>
+    <h3>GitHub:</h3>
+    <p><a href="https://github.com/Lucky4rever">Lucky4rever</a></p>
+    <p><a href="https://github.com/katerynamelnykova">katerynamelnykova</a></p>
+  </div>
+</footer>
+
+<style>
+  footer {
+    background-color: var(--primary);
+    color: var(--text-important);
+    padding: 20px;
+
+    display: grid;
+    grid-template-columns: [title-start] 1fr 1fr 1fr [title-end];
+  }
+
+  footer > h3 {
+    grid-column: title;
+  }
+
+  a {
+    color: var(--text-important);
+  }
+
+  @media (width <= 768px) {
+    footer {
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
