@@ -24,7 +24,7 @@ const { title } = Astro.props;
     position: relative;
     width: 100%;
     height: fit-content;
-    min-height: calc(100% - var(--header-size) - 1px);
+    min-height: calc(var(--body-size) - 1px);
     padding-top: var(--header-size);
   }
 </style>
@@ -43,6 +43,7 @@ const { title } = Astro.props;
 
   :root {
     --header-size: 3.5rem;
+    --body-size: calc(100svh - var(--header-size));
   }
 
   html {
