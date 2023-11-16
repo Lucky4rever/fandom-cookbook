@@ -40,18 +40,23 @@
   div.desc {
     grid-column: normal;
     display: grid;
+    grid-template-columns: [full-start] 0px [left-start] 2fr [left-end] 0fr [right-start] 1fr [right-end] 0px [full-end];
+    align-items: center;
   }
 
-  dev.desc:is(h1 + *) {
-    grid-template-columns: [left-start] 1fr [left-end] 0fr [right-start] 1fr [right-end];
-
-  }
-
-  div.desc > *:not(h1, img) {
+  div.desc *:not(h1, h2, h3, p:has(img), :first-child) {
     grid-column: left;
   }
 
-  div.desc > img {
+  div.desc *:where(h1, h2, h3, :first-child) {
+    grid-column: full;
+  }
+
+  div.desc p:has(img) {
+    grid-column: right;
+  }
+
+  div.desc img {
     width: 100%;
     height: auto;
     max-height: 50rem;
