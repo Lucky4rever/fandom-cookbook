@@ -1,6 +1,3 @@
-export type TileProps = {
-  fandom: string;
-  logo: string;
-  frontImage: string;
-  bgImage: string;
-};
+import type { FandomHighlight } from "./fandom.type";
+
+export type TileProps = FandomHighlight;

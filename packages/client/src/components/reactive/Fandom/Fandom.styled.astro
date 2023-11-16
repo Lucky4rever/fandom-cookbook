@@ -37,7 +37,26 @@
     object-fit: cover;
   }
   
-  p, h1 {
+  div.desc {
     grid-column: normal;
+    display: grid;
   }
+
+  dev.desc:is(h1 + *) {
+    grid-template-columns: [left-start] 1fr [left-end] 0fr [right-start] 1fr [right-end];
+
+  }
+
+  div.desc > *:not(h1, img) {
+    grid-column: left;
+  }
+
+  div.desc > img {
+    width: 100%;
+    height: auto;
+    max-height: 50rem;
+    object-fit: contain;
+    grid-column: right;
+  }
+
 </style>

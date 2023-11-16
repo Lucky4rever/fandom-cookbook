@@ -1,40 +1,44 @@
-import axios from 'axios';
-import type { Method } from 'axios';
-
 interface RequestProps {
   url: string;
-  method?: Method | undefined;
-  requestData?: unknown;
 }
 
 interface ResponseProps<T> {
   isLoading: boolean;
   isEmpty: boolean;
-  data: T | null;
+  data: T;
 }
 
-const useBackend = <T = unknown>({url, method = 'GET', requestData}: RequestProps) => {
-  let responseProps: ResponseProps<T> = {
-    isLoading: true,
-    isEmpty: true,
-    data: null,
+const useBackend = async <T = unknown>({url}: RequestProps) => {
+  try {
+    let isLoading = true;
+    let isEmpty = false;
+
+    const request = async (url: string) => {
+      const responseData = await fetch(url)
+        .then((response) => response.json());
+
+      isLoading = false;
+      isEmpty = responseData === null;
+      
+      return responseData as T;
+    };
+
+    let data: T = await request(url);
+
+    return {
+      isLoading,
+      isEmpty,
+      data,
+    } as ResponseProps<T>;
+  } catch (error) {
+    console.error(error);
   }
-
-  const request = async (data?: unknown): Promise<Awaited<T> | null> => {
-    const response = await axios({ method, url, data });
-
-    responseProps.isLoading = false;
-    
-    return response.data as Awaited<T> | null;
-  };
-
-  request(requestData).then((responseData) => { 
-    responseProps.isEmpty = responseData === null;
-
-    responseProps.data = responseData;
-  });
-
-  return responseProps;
+  
+  return { 
+    isLoading: false, 
+    isEmpty: true, 
+    data: null 
+  } as ResponseProps<T>;
 };
 
 export default useBackend;

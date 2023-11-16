@@ -1,12 +1,9 @@
 [
   {
     "id": "1",
-    "fandom": "zelda-tok",
-    "title": "The legend of Zelda: Tears of Kingdom",
-    "description": "zelda cool text",
-    "bgColor": "aqua",
-    "frontColor": "black",
-    "textColor": "white",
+    "fandom": "zelda-botw",
+    "title": "The legend of Zelda: Breath of the Wild",
+    "description": "# Cooking in Breath of the Wild\nCooking in Breath of the Wild is extensive, but there's no in-game system to track recipes. You can find Breath of the Wild (BOTW) recipes throughout Hyrule on banners and learn them from various NPCs. While learning them this way is neat, sometimes you just need a guide to help turn Link into a master chef.\n## Recipes from the World of Tolkien. Inspired by the Legends\nEver wondered what Lembas Bread, Cram, or Beorn's Honey Cakes might taste like? From Crickhollow Apple Loaf, Pippin's Minas Tirith Lunch, and Brandywine Fish Pie to Dwarven Spiced Pickled Beetroot, Westfarthing Fairings, and Beorn's Twice-Baked Cakes, Recipes from the World of Tolkien includes over 75 mouth-watering recipes that will take you on a journey through Middle-earth, delivering a treat for your taste buds and your imagination. Immerse yourself in Tolkien's epic fantasy world with recipes inspired by its places and characters. Whether it's breakfast or second breakfast, elevenses or afternoon tea, lunch or dinner - cook up a feast fit for orcs and elves alike.\nThis collection of delicious recipes also features stunning illustrations and artwork throughout, as well as short feature essays that explore the compelling role of food in Tolkien's works. This is the perfect, must-have addition to any Tolkien fan's bookshelf. This work is unofficial and is not authorized by the Tolkien Estate or HarperCollins Publishers.",
     "logo": "https://ca-life.org/wp-content/uploads/2018/11/47ACF1BE-8D96-482D-A8D5-8F2DCD078FA8-e1541446656291.png",
     "frontImage": "https://cdn.discordapp.com/attachments/798288758830530573/1173272940335337502/pngwing.com_7.png?ex=65635a93&is=6550e593&hm=06a95717f7bebfc8313a74c80ce1847fdebff86d664d8cd35fa50cca2098ed35&",
     "bgImage": "https://cdn.wccftech.com/wp-content/uploads/2017/01/Zelda-Breath-of-the-Wild-screenshots5-1030x612.jpg"
@@ -16,9 +13,6 @@
     "fandom": "star-wars",
     "title": "Star Wars",
     "description": "STAR WARS YODA TEXT",
-    "bgColor": "black",
-    "frontColor": "aquamarine",
-    "textColor": "green",
     "logo": "https://seeklogo.com/images/S/Star_Wars-logo-97DD55947B-seeklogo.com.png",
     "frontImage": "https://assets.codepen.io/308367/yoda-front.png",
     "bgImage": "https://i.ytimg.com/vi/U4ulczqtPZY/maxresdefault.jpg"
@@ -28,9 +22,6 @@
     "fandom": "witcher-3",
     "title": "The Witcher 3: Wild Hunt",
     "description": "To be fair, i hate Witcher 3",
-    "bgColor": "red",
-    "frontColor": "white",
-    "textColor": "black",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/EN_The-Witcher-3_Logo-Black_RGB.svg/783px-EN_The-Witcher-3_Logo-Black_RGB.svg.png",
     "frontImage": "https://cdn.discordapp.com/attachments/798288758830530573/1172483804552757280/pngegg_1.png?ex=65607ba2&is=654e06a2&hm=3aeb68ab8107752fb2cfc1697da4386759f3716b6b0ba3d9af973c548e8b5fd5&",
     "bgImage": "https://img.redbull.com/images/c_fill,w_1200,h_630,g_auto,f_auto,q_auto/redbullcom/2015/07/02/1331732942905_2/the-witcher-3-wild-hunt"
@@ -40,9 +31,6 @@
     "fandom": "cyberpunk",
     "title": "Cyberpunk",
     "description": "Yooo, this is cyberpunk food",
-    "bgColor": "darkblue",
-    "frontColor": "yellow",
-    "textColor": "black",
     "logo": "https://purepng.com/public/uploads/large/purepng.com-cyberpunk-2077-logologosgame-logogame-logosgameslogocyberpunk-2077-12715289961328hlgr.png",
     "frontImage": "https://cdn.discordapp.com/attachments/798288758830530573/1172488337056084058/png-image.png?ex=65607fdb&is=654e0adb&hm=9cb1f0d315c9b166cf5c064ab1ebc4415de39a287fccd0fe85ab9a4e4a018a2e&",
     "bgImage": "https://www.hollywoodreporter.com/wp-content/uploads/2023/10/Cyberpunk2077_A_mercenary_on_the_rise_RGB.png?w=1296"
@@ -52,9 +40,6 @@
     "fandom": "genshin-impact",
     "title": "Genshin Impact",
     "description": "GAYSHIT INFARCT",
-    "bgColor": "aqua",
-    "frontColor": "whitesmoke",
-    "textColor": "black",
     "logo": "https://www.pngall.com/wp-content/uploads/13/Genshin-Impact-Logo-PNG-Picture.png",
     "frontImage": "https://upload-os-bbs.hoyolab.com/upload/2020/01/24/1093585/1d33c1eb834c805f45a3418aeb16486c_105699498384778945.png?x-oss-process=image%2Fresize%2Cs_1000%2Fauto-orient%2C0%2Finterlace%2C1%2Fformat%2Cwebp%2Fquality%2Cq_80",
     "bgImage": "https://cdn.vox-cdn.com/thumbor/AhPlPR0BlOrrejA7U3O7zd2dVvs=/0x0:3840x2160/1820x1024/filters:focal(2240x926:2854x1540):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/71466892/20220525083706_png_.0.png"

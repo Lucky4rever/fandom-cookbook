@@ -1,5 +1,5 @@
 ---
-import PageWithHeader from '@layouts/PageWithHeader.astro';
+import PageLayout from '@layouts/PageLayout.astro';
 interface Props {
   code: string | number;
 }
@@ -7,7 +7,7 @@ interface Props {
 const { code } = Astro.props;
 ---
 
-<PageWithHeader title={`Error ${code}`}>
+<PageLayout title={`Error ${code}`}>
   <h1>{code}</h1>
   <slot />
-</PageWithHeader>
+</PageLayout>

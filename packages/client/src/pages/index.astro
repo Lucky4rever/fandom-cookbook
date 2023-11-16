@@ -1,10 +1,10 @@
 ---
 import TitleAssets from "@components/TitleAssets.astro";
-import PageWithHeader from "@/layouts/PageWithHeader.astro";
+import PageLayout from "@/layouts/PageLayout.astro";
 import ImportantButton from "@/components/ImportantButton.astro";
 ---
 
-<PageWithHeader title="Welcome to Astro.">
+<PageLayout title="Welcome to Astro.">
   <section>
     <TitleAssets />
     <div>
@@ -16,7 +16,7 @@ import ImportantButton from "@/components/ImportantButton.astro";
       <ImportantButton href="/fandoms">See Cookbooks</ImportantButton>
     </div>
   </section>
-</PageWithHeader>
+</PageLayout>
 
 <style>
   section {

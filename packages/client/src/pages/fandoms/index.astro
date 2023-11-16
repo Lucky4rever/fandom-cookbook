@@ -1,19 +1,25 @@
 ---
-import PageWithHeader from "@layouts/PageWithHeader.astro";
-import data from "@/assets/data.json";
+import PageLayout from "@layouts/PageLayout.astro";
 import { Tile, TileStyle } from "@reactive/Tile";
 import type { TileProps } from "@/utils/types/tile.type";
+import useBackend from "@/utils/hooks/useBackend.hook";
 
-const tiles = data as unknown as TileProps[];
+let { isLoading, isEmpty, data } = await useBackend<TileProps[]>({
+  url: `http://localhost:8080/api/fandoms/fandoms-highlights`,
+});
 ---
 
-<PageWithHeader title="Fandoms">
+<PageLayout title="Fandoms">
   <div>
     <TileStyle>
-      {tiles.map((item) => <Tile {...item} />)}
+      {
+        isLoading ? (<div>Loading...</div>) :
+        isEmpty ? (<div>Oops, there is nothing</div>) :
+        data?.map((item) => <Tile {...item} />)
+      }
     </TileStyle>
   </div>
-</PageWithHeader>
+</PageLayout>
 
 <style>
   main {
