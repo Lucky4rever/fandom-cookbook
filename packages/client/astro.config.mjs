@@ -7,9 +7,7 @@ import react from "@astrojs/react";
 export default defineConfig({
   root: './',
   output: 'server',
-  adapter: node({
-    mode: 'standalone',
-  }),
+  adapter: vercel(),
   server: {
     port: 3000,
     host: '::1'
