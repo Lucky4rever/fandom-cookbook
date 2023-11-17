@@ -5,7 +5,7 @@ import type { TileProps } from "@/utils/types/tile.type";
 import useBackend from "@/utils/hooks/useBackend.hook";
 
 let { isLoading, isEmpty, data } = await useBackend<TileProps[]>({
-  url: `http://localhost:8080/api/fandoms/fandoms-highlights`,
+  url: `http://fandom-cookbook-server.adaptable.app/api/fandoms/fandoms-highlights`,
 });
 ---
 
