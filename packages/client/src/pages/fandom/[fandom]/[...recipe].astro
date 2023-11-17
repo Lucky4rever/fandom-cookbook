@@ -12,7 +12,7 @@ interface Props extends Recipe {
 const { fandom, recipe } = Astro.params;
 
 let { isLoading, isEmpty, data } = await useBackend<Props>({
-  url: `http://localhost:8080/api/fandoms/fandom/${fandom}/${recipe}`,
+  url: `http://fandom-cookbook-server.adaptable.app/api/fandoms/fandom/${fandom}/${recipe}`,
 });
 
 const markedRecipe = marked.parse(data?.recipe || "There's nothing");
