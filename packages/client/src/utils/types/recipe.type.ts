@@ -1,9 +1,10 @@
 type RecipeHighlight = {
-  id: number;
-  title: string;
+  _idrec: number;
+  name: string;
 };
 
 type Recipe = RecipeHighlight & {
+  name: string;
   recipe: string;
   img: string;
   video?: string | undefined

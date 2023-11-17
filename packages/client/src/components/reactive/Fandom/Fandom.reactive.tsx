@@ -23,7 +23,14 @@ const Fandom = ({fandom, title, logo, bgImage, children, recipes}: Props): JSX.E
       </section>
       <h1>{title}</h1>
       <div className="desc">{children}</div>
-      {recipes?.map((recipe) => (<a href={`/fandom/${fandom}/${recipe.id}`}>{recipe.title}</a>))}
+      {
+        recipes?.map((r) => r).length ? (<h2>Recipes:</h2>) : (<></>)
+      }
+      <div className="recipe-wrapper">
+        {recipes?.map((recipe) => (<div className="recipe">
+          <a className="recipe" href={`/fandom/${fandom}/${recipe._idrec}`}>{recipe.name}</a>
+        </div>))}
+      </div>
     </div>
   );
 };
