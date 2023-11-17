@@ -1,12 +1,23 @@
-export type Fandom = {
-  id: number;
+import type { Recipe } from './recipe.type';
+
+type FandomHighlight = {
+  id: number; 
   fandom: string;
+
+  logo: string;
+  frontImage: string;
+  bgImage: string;
+};
+
+type Fandom = FandomHighlight & {
   title: string;
   description: string;
-  bgColor: string;
-  frontColor: string;
-  textColor: string;
-  logo: string;
-  bgImage: string;
-  frontImage: string;
+
+  bookCover?: string | undefined;
+  recipes: Recipe[] | null;
+};
+
+export type {
+  FandomHighlight,
+  Fandom,
 };

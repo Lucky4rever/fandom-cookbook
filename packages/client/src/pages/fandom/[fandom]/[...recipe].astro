@@ -1,0 +1,22 @@
+---
+import PageLayout from "@/layouts/PageLayout.astro";
+import useBackend from "@/utils/hooks/useBackend.hook";
+import type { Recipe } from "@utils/types/recipe.type";
+
+interface Props extends Recipe {
+  fandom: string;
+}
+
+const { fandom, recipe } = Astro.params;
+
+let { isLoading, isEmpty, data } = await useBackend<Props>({
+  url: `http://localhost:8080/api/fandoms/fandom/${fandom}`,
+});
+---
+
+<PageLayout title={`${fandom} - recipe ${recipe}`}>
+  <!-- <RecipePageStyle>
+    <RecipePage {...data} client:only="react" />
+  </RecipePageStyle> -->
+  123
+</PageLayout>
