@@ -10,7 +10,7 @@ interface Props extends FandomProps {};
 const { fandom } = Astro.params;
 
 let { isLoading, isEmpty, data } = await useBackend<Props>({
-  url: `http://localhost:8080/api/fandoms/fandom/${fandom}`,
+  url: `http://fandom-cookbook-server.adaptable.app/api/fandoms/fandom/${fandom}`,
 });
 
 const markedDesc = marked.parse(data?.description || "There's nothing");
