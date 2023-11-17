@@ -6,17 +6,11 @@
     grid-template-columns: [large-start] 5% [big-start] 10% [normal-start] 70% [normal-end] 10% [big-end] 5% [large-end];
     height: max-content;
     width: 100%;
+    margin: 1rem 0;
   }
 
   div.wrapper > * {
     grid-column: normal;
-  }
-
-  section.front.front {
-    position: relative;
-    grid-column: large;
-    height: calc(100svh - var(--header-size));
-    width: 100%;
   }
 
   img.logo {
@@ -36,32 +30,20 @@
     width: 100%;
     object-fit: cover;
   }
-  
-  div.desc {
-    grid-column: normal;
-    display: grid;
-    grid-template-columns: [full-start] 0px [left-start] 2fr [left-end] 0fr [right-start] 1fr [right-end] 0px [full-end];
-    align-items: center;
+
+  .video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio (9 / 16 * 100%) */
+    height: 0;
+    overflow: hidden;
+    margin: 2rem 0;
   }
 
-  div.desc *:not(h1, h2, h3, p:has(img), :first-child) {
-    grid-column: left;
-  }
-
-  div.desc *:where(h1, h2, h3, :first-child) {
-    grid-column: full;
-  }
-
-  div.desc p:has(img) {
-    grid-column: right;
-  }
-
-  div.desc img {
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: auto;
-    max-height: 50rem;
-    object-fit: contain;
-    grid-column: right;
+    height: 100%;
   }
-
 </style>

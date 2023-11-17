@@ -3,6 +3,7 @@ import PageLayout from "@/layouts/PageLayout.astro";
 import useBackend from "@/utils/hooks/useBackend.hook";
 import type { Recipe } from "@utils/types/recipe.type";
 import { RecipePage, RecipePageStyle } from '@components/reactive/Recipe';
+import { marked } from 'marked';
 
 interface Props extends Recipe {
   fandom: string;
@@ -13,6 +14,8 @@ const { fandom, recipe } = Astro.params;
 let { isLoading, isEmpty, data } = await useBackend<Props>({
   url: `http://localhost:8080/api/fandoms/fandom/${fandom}/${recipe}`,
 });
+
+const markedRecipe = marked.parse(data?.recipe || "There's nothing");
 ---
 
 <PageLayout title={`${fandom} - recipe ${recipe}`}>
@@ -20,7 +23,7 @@ let { isLoading, isEmpty, data } = await useBackend<Props>({
     {
       isLoading ? (<div>Loading...</div>) :
       isEmpty ? (<div>Oops, there is nothing</div>) :
-      <RecipePage {...data} client:only="react" />
+      <RecipePage {...data} set:html={markedRecipe} client:only="react" />
     }
   </RecipePageStyle>
 </PageLayout>

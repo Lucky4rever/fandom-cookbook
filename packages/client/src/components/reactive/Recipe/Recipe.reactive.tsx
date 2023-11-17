@@ -1,19 +1,23 @@
 import type { Recipe as RecipeProps } from '@utils/types/recipe.type';
 
-type Props = Prettify<RecipeProps>
+type Props = Prettify<RecipeProps> & {
+    children?: never;
+};
 
-const Fandom = ({name, recipe, img, video}: Props): JSX.Element => {
-  // const [renderedDescription, setRenderedDescription] = useState<JSX.Element>();
-
-  // useEffect(() => {
-  //   const renderedDesc = useMarkdownRenderer(description);
-  //   setRenderedDescription(renderedDesc);
-  // }, []);
-
+const Fandom = ({name, children, img, video}: Props): JSX.Element => {
   return (
     <div className="wrapper">
-      <h1>{name}</h1>
-      <h1>{recipe}</h1>
+      <div>{children}</div>
+      {
+        video ? (
+            <div className="video-container">
+            <iframe src={video} title="YouTube video player" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            frameBorder="0" allowFullScreen>
+            </iframe>
+            </div>
+        ) : (<></>)
+      }
     </div>
   );
 };
