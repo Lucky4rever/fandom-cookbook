@@ -5,7 +5,7 @@ import type { FandomHighlight } from './types/fandom.type';
 const fandomsStore = map<FandomHighlight>();
 
 const { data } = await useBackend<FandomHighlight[]>({
-  url: `http://localhost:8080/api/fandoms/fandoms-highlights`,
+  url: `http://fandom-cookbook-server.adaptable.app/api/fandoms/fandoms-highlights`,
 });
 
 data.forEach((item) => fandomsStore.set(item));
