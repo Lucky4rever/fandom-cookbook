@@ -1,9 +1,0 @@
-{
-  "routes": [
-    { "src": "/", "dest": "/" },
-    { "src": "/fandoms", "dest": "/" },
-    { "src": "/fandom/:fandom", "dest": "/" },
-    { "src": "/fandom/:fandom/:recipe", "dest": "/" },
-    { "src": "/.*", "dest": "/" }
-  ]
-}
