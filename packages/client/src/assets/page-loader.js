@@ -6,3 +6,5 @@ import SwupSlideTheme from '@swup/slide-theme';
 const swup = new Swup({
   plugins: [new SwupA11yPlugin(), new SwupHeadPlugin(), new SwupSlideTheme()],
 });
+
+export default swup;
